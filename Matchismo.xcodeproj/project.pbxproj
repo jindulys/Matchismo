@@ -18,6 +18,10 @@
 		8A39690116BE8A5000D38B35 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A39690016BE8A5000D38B35 /* Default-568h@2x.png */; };
 		8A39690416BE8A5000D38B35 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A39690216BE8A5000D38B35 /* MainStoryboard.storyboard */; };
 		8A39690716BE8A5000D38B35 /* LysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A39690616BE8A5000D38B35 /* LysViewController.m */; };
+		8A39691216BE8BE900D38B35 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A39691116BE8BE900D38B35 /* Card.m */; };
+		8A39691616BE987B00D38B35 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A39691516BE987B00D38B35 /* Deck.m */; };
+		8A39691916BE9D1500D38B35 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A39691816BE9D1500D38B35 /* PlayingCard.m */; };
+		8A39692016BEB1DC00D38B35 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A39691F16BEB1DC00D38B35 /* PlayingCardDeck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,14 @@
 		8A39690316BE8A5000D38B35 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		8A39690516BE8A5000D38B35 /* LysViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LysViewController.h; sourceTree = "<group>"; };
 		8A39690616BE8A5000D38B35 /* LysViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LysViewController.m; sourceTree = "<group>"; };
+		8A39691016BE8BE900D38B35 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Matchismo/Model/Card.h; sourceTree = "<group>"; };
+		8A39691116BE8BE900D38B35 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = Matchismo/Model/Card.m; sourceTree = "<group>"; };
+		8A39691416BE987B00D38B35 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = Matchismo/Model/Deck.h; sourceTree = "<group>"; };
+		8A39691516BE987B00D38B35 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Deck.m; path = Matchismo/Model/Deck.m; sourceTree = "<group>"; };
+		8A39691716BE9D1500D38B35 /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCard.h; path = Matchismo/Model/PlayingCard.h; sourceTree = "<group>"; };
+		8A39691816BE9D1500D38B35 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCard.m; path = Matchismo/Model/PlayingCard.m; sourceTree = "<group>"; };
+		8A39691E16BEB1DC00D38B35 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCardDeck.h; path = Matchismo/Model/PlayingCardDeck.h; sourceTree = "<group>"; };
+		8A39691F16BEB1DC00D38B35 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCardDeck.m; path = Matchismo/Model/PlayingCardDeck.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 		8A3968DB16BE8A5000D38B35 = {
 			isa = PBXGroup;
 			children = (
+				8A39691316BE8BF600D38B35 /* Model */,
 				8A3968F016BE8A5000D38B35 /* Matchismo */,
 				8A3968E916BE8A5000D38B35 /* Frameworks */,
 				8A3968E716BE8A5000D38B35 /* Products */,
@@ -83,8 +96,6 @@
 		8A3968F016BE8A5000D38B35 /* Matchismo */ = {
 			isa = PBXGroup;
 			children = (
-				8A3968F916BE8A5000D38B35 /* LysAppDelegate.h */,
-				8A3968FA16BE8A5000D38B35 /* LysAppDelegate.m */,
 				8A39690216BE8A5000D38B35 /* MainStoryboard.storyboard */,
 				8A39690516BE8A5000D38B35 /* LysViewController.h */,
 				8A39690616BE8A5000D38B35 /* LysViewController.m */,
@@ -96,6 +107,8 @@
 		8A3968F116BE8A5000D38B35 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8A3968F916BE8A5000D38B35 /* LysAppDelegate.h */,
+				8A3968FA16BE8A5000D38B35 /* LysAppDelegate.m */,
 				8A3968F216BE8A5000D38B35 /* Matchismo-Info.plist */,
 				8A3968F316BE8A5000D38B35 /* InfoPlist.strings */,
 				8A3968F616BE8A5000D38B35 /* main.m */,
@@ -105,6 +118,21 @@
 				8A39690016BE8A5000D38B35 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A39691316BE8BF600D38B35 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8A39691016BE8BE900D38B35 /* Card.h */,
+				8A39691116BE8BE900D38B35 /* Card.m */,
+				8A39691416BE987B00D38B35 /* Deck.h */,
+				8A39691516BE987B00D38B35 /* Deck.m */,
+				8A39691E16BEB1DC00D38B35 /* PlayingCardDeck.h */,
+				8A39691F16BEB1DC00D38B35 /* PlayingCardDeck.m */,
+				8A39691716BE9D1500D38B35 /* PlayingCard.h */,
+				8A39691816BE9D1500D38B35 /* PlayingCard.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +205,10 @@
 				8A3968F716BE8A5000D38B35 /* main.m in Sources */,
 				8A3968FB16BE8A5000D38B35 /* LysAppDelegate.m in Sources */,
 				8A39690716BE8A5000D38B35 /* LysViewController.m in Sources */,
+				8A39691216BE8BE900D38B35 /* Card.m in Sources */,
+				8A39691616BE987B00D38B35 /* Deck.m in Sources */,
+				8A39691916BE9D1500D38B35 /* PlayingCard.m in Sources */,
+				8A39692016BEB1DC00D38B35 /* PlayingCardDeck.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
