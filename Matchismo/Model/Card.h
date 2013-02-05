@@ -6,6 +6,10 @@
 //  Copyright (c) 2013年 Liyansong. All rights reserved.
 //
 
+/*
+ *this is a normal card -- lys
+ */
+
 #import <Foundation/Foundation.h>
 
 @interface Card : NSObject
